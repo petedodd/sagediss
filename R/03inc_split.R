@@ -30,7 +30,7 @@ load(here('Rdata/pop.Rdata'))          # population for denom
 load(here('R/02children/plots/K.Rdata'))   # Child estimates
 load(here('prevsplits/prevsplits.Rdata'))   # from prevalence split work
 names(prevsplits)[2] <- 'age_group'
-load(here('R/02children/mortinput/BB.Rdata'))     #for age splits
+load(here('R/02children/mortinput/BB.Rdata'))     #
 
 ## a country hash
 hbcsh <- merge(unique(est[,.(iso3,g.hbc)]),unique(tb[,.(iso3,name=country)]))
